@@ -13,6 +13,4 @@ urlpatterns = [
   #  path('', include('nimboapp.urls')),
     path('', lambda request: redirect('/admin/login/', permanent=True)),
     path('', include('nimboapp.urls')),
-
-
 ]
