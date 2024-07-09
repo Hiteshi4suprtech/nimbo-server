@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Change directory to the home directory
-cd /home/ubuntu/nimbo-server/
+source /home/ubuntu/venv/bin/activate
 
+cd /nimbo-server/
 pip install -r requirements.txt
 # Perform Django migrations
 python manage.py migrate
