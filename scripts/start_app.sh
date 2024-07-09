@@ -4,26 +4,27 @@
 cd /home/ubuntu/
 
 # Create and activate a virtual environment
-python3 -m venv venv
-source /home/ubuntu/venv/bin/activate
+python -m venv venv
 
+source /home/ubuntu/venv/bin/activate
+cd /home/ubuntu/
 # Install Django and other dependencies
-python3 -m pip install Django
+python -m pip install Django
 # Add any other dependencies you might have
 
 # Set PYTHONPATH to include your Django project directory
 
 # Change directory to your Django project directory
-cd /home/ubuntu/nimbo-server/
-
+cd /nimbo-server/
+pip install -r requirements.txt
 # Perform Django migrations
-python3 manage.py migrate
+python manage.py migrate
 
 # Make Django migrations if needed
-python3 manage.py makemigrations
+python manage.py makemigrations
 
 # Collect static files
-python3 manage.py collectstatic --noinput
+python manage.py collectstatic --noinput
 
 # Restart gunicorn and nginx
 sudo systemctl restart gunicorn
