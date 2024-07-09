@@ -2,7 +2,7 @@
 
 source /home/ubuntu/envnimbo/bin/activate
 
-cd /nimbo-server/
+cd /home/ubuntu/nimbo-server/
 
 # Perform Django migrations
 python manage.py migrate
