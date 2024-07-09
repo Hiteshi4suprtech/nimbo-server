@@ -3,7 +3,7 @@
 source /home/ubuntu/envnimbo/bin/activate
 
 cd /nimbo-server/
-pip install -r requirements.txt
+
 # Perform Django migrations
 python manage.py migrate
 
