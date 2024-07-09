@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/ubuntu/venv/bin/activate
+source /home/ubuntu/envnimbo/bin/activate
 
 cd /nimbo-server/
 pip install -r requirements.txt
