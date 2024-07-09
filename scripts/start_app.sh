@@ -1,5 +1,11 @@
 #!/usr/bin/bash 
+cd /home/ubuntu/
+python3 -m venv venv
+source /home/ubuntu/venv/bin/activate
+python3 -m pip install Django
+
 cd /home/ubuntu/nimbo-server/
+
 python3 manage.py migrate 
 python3 manage.py makemigrations     
 python3 manage.py collectstatic
