@@ -1,6 +1,6 @@
 #!/usr/bin/bash 
 
-sed -i 's/\[]/\["184.72.78.226"]/' /home/ubuntu/nimbo-server/blog/settings.py
+sed -i 's/\[]/\["184.72.78.226"]/' /home/ubuntu/nimbo-server/nimboproject/settings.py
 
 python manage.py migrate 
 python manage.py makemigrations     
