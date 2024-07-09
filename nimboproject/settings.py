@@ -36,8 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'nimboapp',
-    'corsheaders',
+    # 'nimboapp',
+    # 'corsheaders',
   #  'ariadne.contrib.django',
 
 
