@@ -1,27 +1,28 @@
-#!/usr/bin/bash 
-cd /home/ubuntu/
-python3 -m venv venv
-source /home/ubuntu/venv/bin/activate
-python3 -m pip install Django
+#!/bin/bash
 
+# Change directory to the home directory
+cd /home/ubuntu/
+
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install Django and other dependencies
+python3 -m pip install Django
+# Add any other dependencies you might have
+
+# Change directory to your Django project directory
 cd /home/ubuntu/nimbo-server/
 
-python3 manage.py migrate 
-python3 manage.py makemigrations     
-python3 manage.py collectstatic
-sudo service gunicorn restart
-sudo service nginx restart
+# Perform Django migrations
+python3 manage.py migrate
 
+# Make Django migrations if needed
+python3 manage.py makemigrations
 
-#sudo tail -f /var/log/nginx/error.log
-#sudo systemctl reload nginx
-#sudo tail -f /var/log/nginx/error.log
-#sudo nginx -t
-#sudo systemctl restart gunicorn
-#sudo systemctl status gunicorn
-#sudo systemctl status nginx
-# Check the status
-#systemctl status gunicorn
-# Restart:
-#systemctl restart gunicorn
-#sudo systemctl status nginx
+# Collect static files
+python3 manage.py collectstatic --noinput
+
+# Restart gunicorn and nginx
+sudo systemctl restart gunicorn
+sudo systemctl restart nginx
