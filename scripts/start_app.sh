@@ -5,14 +5,13 @@ cd /home/ubuntu/
 
 # Create and activate a virtual environment
 python3 -m venv venv
-source venv/bin/activate
+source /home/ubuntu/venv/bin/activate
 
 # Install Django and other dependencies
 python3 -m pip install Django
 # Add any other dependencies you might have
 
 # Set PYTHONPATH to include your Django project directory
-export PYTHONPATH=/home/ubuntu/nimbo-server:$PYTHONPATH
 
 # Change directory to your Django project directory
 cd /home/ubuntu/nimbo-server/
