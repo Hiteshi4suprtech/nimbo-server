@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ssh root@184.72.78.226 <<EOF
-  cd blogprojectdrf
+  cd nimbo-server
   git pull 
   source envnimbo/bin/activate
   ./manage.py migrate

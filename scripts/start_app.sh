@@ -1,7 +1,5 @@
 #!/bin/bash
-sudo chown -R ubuntu:ubuntu /home/ubuntu/nimbo-server/staticfiles
-sudo chown -R www-data:www-data /home/ubuntu/nimbo-server/staticfiles
-sudo chmod -R 755 /home/ubuntu/nimbo-server/staticfiles
+
 
 source /home/ubuntu/envnimbo/bin/activate
 
