@@ -16,7 +16,7 @@ python manage.py makemigrations
 
 ps aux | grep gunicorn
 # Collect static files
-python manage.py collectstatic
+python manage.py collectstatic --noinput
 
 # Restart gunicorn and nginx
 sudo systemctl restart gunicorn
