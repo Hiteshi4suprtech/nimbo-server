@@ -9,11 +9,11 @@ source /home/ubuntu/envnimbo/bin/activate
 cd /home/ubuntu/nimbo-server/
 
 python manage.py collectstatic
-# Perform Django migrations
-python manage.py migrate
+# # Perform Django migrations
+# python manage.py migrate
 
-# Make Django migrations if needed
-python manage.py makemigrations
+# # Make Django migrations if needed
+# python manage.py makemigrations
 
 ps aux | grep gunicorn
 # Collect static files
