@@ -43,7 +43,7 @@ SECRET_KEY = 'django-insecure-anv11gyn6wbv(@#vy(*s6@=arr^fr1_e(fzk!2e48s^ouzf8v2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['184.72.78.226']
+ALLOWED_HOSTS = ['52.90.201.21']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
