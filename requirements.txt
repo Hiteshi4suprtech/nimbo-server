@@ -65,7 +65,7 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 sqlparse==0.5.0
 srsly==2.4.8
-sshuttle==1.1.2
+sshuttle==1.1.1
 thinc==8.2.5
 tqdm==4.66.4
 typer==0.12.3
