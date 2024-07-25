@@ -140,7 +140,6 @@ WSGI_APPLICATION = 'nimbo.wsgi.application'
 #     }
 # }
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
