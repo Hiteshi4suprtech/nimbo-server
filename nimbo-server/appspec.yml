@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/nimbo-server
+    destination: /home/ubuntu/nimbo-server/nimbo-server
+    overwrite: true
 hooks:
   AfterInstall:
     - location: scripts/after_install.sh

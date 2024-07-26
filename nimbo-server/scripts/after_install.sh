@@ -1,17 +1,9 @@
 #!/bin/bash
 
 # Navigate to the project directory
-cd /home/ubuntu/nimbo-server
+cd /home/ubuntu/nimbo-server/nimbo-server
 
-# Remove existing virtual environment if it exists
-if [ -d "venv" ]; then
-    rm -rf venv
-fi
-
-# Create a new virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
+# Activate virtual environment (if you are using one)
 source venv/bin/activate
 
 # Install dependencies
