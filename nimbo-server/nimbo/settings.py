@@ -59,7 +59,6 @@ EMAIL_HOST_PASSWORD = 'Mahesh@616'
 
 # Application definition
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
