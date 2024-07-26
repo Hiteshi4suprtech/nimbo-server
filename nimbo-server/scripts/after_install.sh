@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the project directory
-cd /home/ubuntu/nimbo-server/nimbo-server
+cd /home/ubuntu/nimbo-server
 
 # Activate virtual environment (if you are using one)
 source venv/bin/activate
